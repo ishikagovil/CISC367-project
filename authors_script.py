@@ -6,7 +6,13 @@ def get_user_info(csvreader):
    user_dict = {}
    csvreader.__next__()
    for line in csvreader:
-        print(line[0])
+        
+        ##blackList = {"shit" , "fuck", "damn"}
+        ##containsWord = any(ext in line[3] for ext in blackList)
+        ##if(containsWord == True):
+            ##user_dict[line[2]].profane_messages += 1
+        
+        ##print(line[0])
         message =  te.get_emotion(line[3])
         angryMessage = message.get("Angry")
         happyMessage = message.get("Happy")
