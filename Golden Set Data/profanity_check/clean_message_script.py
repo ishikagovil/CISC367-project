@@ -1,5 +1,6 @@
 import re
 
+
 def clean_message(message:str) -> str:
     
     #First clean out code blocks and tags to other forum
