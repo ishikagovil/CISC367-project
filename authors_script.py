@@ -6,7 +6,7 @@ def get_user_info(csvreader):
    user_dict = {}
    csvreader.__next__()
    for line in csvreader:
-        
+        #example blackList here: https://github.com/web-mech/badwords/blob/master/lib/lang.json
         ##blackList = {"shit" , "fuck", "damn"}
         ##containsWord = any(ext in line[3] for ext in blackList)
         ##if(containsWord == True):
