@@ -1,0 +1,323 @@
+﻿Messages
+"Thank you, that makes sense. but now im getting a error when i use this:
+
+for index, row in op_dept.iterrows():
+agent = row['visitor_id']
+agent_department = requests.get('&lt;https://developer.livehelpnow.net/api/visitor/&gt;'+agent, headers ={'Authorization': token})
+found_agent = agent_department.json()
+agent_name = found_agent['payload']
+agent_name = agent_name['visitor']
+agent_name = agent_name['details']
+test = found_agent['payload']
+test = test['visitor']
+test = test['details']
+
+# op_dept['user_issue'] = test[16]['value']
+# op_dept['agent_name'] = test[18]['value']
+
+opt_dept[index,'user_issue'] = test[16]['value']"
+"so you had to use lists of words for your categories. and you could iterate over every word in your sentence, or you build some comprehensions around that"
+by not printing it and monitoring your memory usage
+"they tried to get out quickly though, which was good"
+Hello. I am having some trouble selecting data from Pandas dataframes. How do I select the values from 'NAc Core L' that have 700 as value in the 'Coordinate' column? Thanks!
+it'll make reading the code easier
+now that’s a name I’ve not heard in a long time
+&lt;@Ashley&gt; how do I change the version of venv
+"hi friends , i am pulling HTML content (email body) from a text file and pushing it through mail . But getting below error :disappointed:"
+"I expected a couple of hits.
+I got:
+```
+{
+""took"" : 6,
+""timed_out"" : false,
+""_shards"" : {
+""total"" : 13,
+""successful"" : 13,
+""skipped"" : 0,
+""failed"" : 0
+},
+""hits"" : {
+""total"" : 0,
+""max_score"" : null,
+""hits"" : [ ]
+}
+}
+```"
+"Yes, that's right. Hence why I went down the route of Huey. I wanted to use celery, because i've used it in the past for other projects. But this problem was worse before.
+
+
+I believe I am on the latest and greatest.
+```
+celery==4.2.1
+django-celery-beat==1.4.0
+Django==2.1.4
+```"
+"Can someone point out what Im doing wrong here, I cant figure it out and its probably something simple. I am trying to sum values in a list of dictionaries but for some reason only the first line of code I am using to sum actually gets summed, the next value is always a zero even when I switch them. I pasted the results below where is show the flip flop but in both cases bothe sums should be equal to 2.
+
+```
+grouper = itemgetter(""storeCode"", ""shipDate"", ""shipTime"")
+result = []
+for key, grp in groupby(sorted(tlog_dict_list, key = grouper), grouper):
+temp_dict = dict(zip([""storeCode"", ""shipDate"", ""shipTime""], key))
+
+temp_dict[""salesTrans""] = sum(item[""salesTrans""] for item in grp)
+temp_dict[""saleUnits""] = sum(item[""saleUnits""] for item in grp)
+
+pprint(result)
+```
+```
+[{'saleUnits': 0,
+'salesTrans': 2,
+'shipDate': u'2019-03-05',
+'shipTime': u'22:56',
+'storeCode': u'52'}]
+```
+```[{'saleUnits': 2,
+'salesTrans': 0,
+'shipDate': u'2019-03-05',
+'shipTime': u'22:56',
+'storeCode': u'52'}]
+```"
+"ah ok, I always end up using datetime's so I never actually realized this^"
+a == 0 # True
+"There is also virtualenvwrapper (&lt;https://virtualenvwrapper.readthedocs.io/en/latest/&gt;) which I used to use before, and pipenv (&lt;https://github.com/pypa/pipenv&gt;)"
+thats waht im doing?
+Correct
+"on my local machine, it displays
+```
+{
+""central_auto"": ""Mon, 14 Jan 2019 22:11:07 GMT"", 
+""central_hard"": ""Mon, 14 Jan 2019 22:11:07 GMT"", 
+""utc"": ""Tue, 15 Jan 2019 06:11:07 GMT""
+}
+```
+
+but on my deployment it returns
+```
+{
+""central_auto"": ""Mon, 14 Jan 2019 22:11:07 GMT"", 
+""central_hard"": ""Mon, 14 Jan 2019 22:11:07 GMT"", 
+""utc"": ""Mon, 14 Jan 2019 22:11:07 GMT""
+}
+```</text>
+</message>
+<message conversation_id=""207"">
+<ts>2019-01-15T01:40:48.300000</ts>
+<user>Philip</user>
+<text>hmm, weird it now returns exactly what I want to, as if the timezone changed. The current response is now. But I did specify for it to return utc timezone.
+```
+{
+""central_auto"": ""Tue, 15 Jan 2019 06:39:31 GMT"", 
+""central_hard"": ""Tue, 15 Jan 2019 06:39:31 GMT"", 
+""utc"": ""Tue, 15 Jan 2019 06:39:31 GMT""
+}
+```"
+the php ecommerce system?
+"You can easily get around that by grabbing the cookies/user agent from the browser, and using them in your request"
+&lt;@Allyson&gt; when I had to write some test for a cli I only tested the handlers and not the arguments themselves. But you might want to ask in #testing_ (it's a channel but slack bug when there is an ending _) :slightly_smiling_face:
+"`&lt;http://df.at[row|df.at[row&gt;, col] = new_val`"
+"Hi guys,
+Do you know if is there a way to read the test cases from a file?
+
+I am using pytest, and at the moment my test looks like this:
+
+```
+@pytest.mark.parametrize(""field1, field2"", [
+('test 1 log string', ['result', 'expected', 'as', 'a', 'list'),
+('test 2 log string', ['result', 'expected', 'as', 'a', 'list'),
+[...]
+])
+def test_fun(field1, field2):
+assert ....
+```</text>
+</message>
+<message conversation_id=""2375"">
+<ts>2019-05-31T04:06:47.183600</ts>
+<user>Jettie</user>
+<text>```
+def params_from_file(path):
+with open(path, 'rt') as f:
+return json.load(f)
+
+@pytest.mark.parametrize('field1, field2', params_from_file('1.json'))```"
+"Look at `pairwise` recipe &lt;https://docs.python.org/3/library/itertools.html#itertools-recipes&gt;
+```
+&amp;gt;&amp;gt;&amp;gt; list(pairwise(""this is a string"".split()))
+[('this', 'is'), ('is', 'a'), ('a', 'string')]
+```"
+yea doing that works perfectly
+"specifically
+
+``` # If we don't have a real translation object, assume it's the default language.
+return settings.LANGUAGE_CODE```"
+"My scraper download the monitored pages on a folder, so I am create a hashtable of all page files, so if one change the scraper will download and compare with the cached html file"
+thats my only concern. I have never used this package before
+Thanks &lt;@Ashley&gt;
+"Question:
+In Python 3.6 this code block fails with `complaining that config is not a module`
+```Script file: /my_prog/somescript.py
+Config files: /myprog/config/config.py
+from config.config import Config fails```
+
+In python 3.5 this works.
+```
+Script file: /my_prog/somescript.py
+Config files: /myprog/config/config.py
+from config.config import Config fails
+```
+To make it work on python 3.6 I had to do
+`from config import Config`
+
+Anyone happen to know why?"
+"wait, so `a.foo` makes foo get reset?"
+Thank you &lt;@Mildred&gt; and &lt;@Sasha&gt; :clap:
+you could also check out &lt;#CC4NKARK6|regex&gt; for future regex qs :stuck_out_tongue:
+"My API returns just the value. I believe it's my fault but am not very versatile with Python/Django. Any help is appreciated.
+
+What is returned
+```
+""This is the message""
+```
+
+*What I want:*
+
+```
+{
+""message"": ""This is a message""
+}
+```
+
+*views.py*
+```
+from rest_framework.response import Response
+
+from id.models import Id
+from rest_framework import generics
+from id.serializers import IdSerializer
+from django.http import Http404
+from IPython import embed
+
+
+class OfferView(generics.RetrieveAPIView):
+serializer_class = IdSerializer
+lookup_field = 'id'
+
+def get_queryset(self):
+id = self.kwargs['id']
+try:
+return Id.objects.filter(id=id)
+except Mamo.DoesNotExist:
+raise Http404
+
+def get(self, request, *args, **kwargs):
+queryset = self.get_queryset()
+
+serializer = self.serializer_class(queryset, many=True)
+try:
+if serializer.data[0]['offer_id'] is not None:
+result = serializer.data[0]['main_offer']
+elif serializer.data[0]['offer_id'] is None:
+result = serializer.data[0]['extra_offer']
+else:
+result = serializer.data[0]['exceptional_offer']
+return Response(result)
+except IndexError:
+raise Http404
+```"
+"No, because your variable is not a class. It's an instance of a class (in your case, an integer)."
+for a class in a definition `def myDefinition(parm)`
+&lt;https://shinobi.video/&gt;
+So for my next task. I'm writing a panagram tester. And while it works when i run the module it's failing a lot of the test conditions and i can't identify why
+"from sklearn.datasets import load_iris
+from sklearn import tree
+import graphviz
+
+
+iris= load_iris()
+
+clf= tree.DecisionTreeClassifier()
+clf.fit(iris.data, iris.target)
+
+input= [[5.9,3.0,5.1,1.8]]
+flower= clf.predict(input)
+print(flower)
+
+
+data= tree.export_graphviz(clf, feature_names=iris.feature_names, class_names=iris.target_names, filled=True,rounded=True,special_characters=True)
+print(data)
+
+graph = graphviz.Source(data)
+# graph.render(""IRIS TREE"")
+# graph.view()"
+"That makes sense.
+
+That is correct. The caller would invoke the `withdraw` method of the account object, which would set the balance internally."
+"I have a function that takes in a list of dictionaries as an argument. How would I type hint this?
+
+i.e
+```
+def foo(bar: List[Dict]) 
+pass
+```"
+"or add that folder to your system path, but i think that's not the best practice"
+"Yes, but I need to all all 5 links and responses, then concat all of them"
+"There 2 or 3 options available for Django, I like django-mama-cas with django-cas-ng for clients."
+&lt;https://docs.python-guide.org/writing/documentation/&gt;
+for that
+"Still getting ```File ""foo.py"", line 12, in &amp;lt;module&amp;gt;
+from components import rock
+ModuleNotFoundError: No module named 'components'```"
+"or
+```
+from itertools import filterfalse, tee
+
+def partition(pred, iterable):
+'Use a predicate to partition entries into false entries and true entries'
+# partition(is_odd, range(10)) --&amp;gt; 0 2 4 6 8 and 1 3 5 7 9
+t1, t2 = tee(iterable)
+return filterfalse(pred, t1), filter(pred, t2)
+```"
+`3.6.20`
+"i have same ""connection.ini"" files in different folder , how can i be assure that which location is being picked up ? ```from configparser import ConfigParser
+
+config = ConfigParser()
+
+config.sections()
+
+#config.read('database.ini')
+config.read('[&lt;http://topsecret.server.com|topsecret.server.com&gt;]', 'Port')
+for section_name in config:
+print('Section:', section_name)
+
+print ( config.get('&lt;http://topsecret.server.com|topsecret.server.com&gt;','Port'))```"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
