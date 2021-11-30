@@ -15,23 +15,23 @@ from profanity_check import predict
       
 def check_profanity(message:str) -> bool:
     
-    print("Now checking for profanity:")
-    print("\tSOURCE:", message)
+    #print("Now checking for profanity:")
+    #print("\tSOURCE:", message)
     
     profanity_dict = {
         'a' : ["ahole","anus","arse","arse","arseh0le","arseh0les","arsehole","arseholes","arsewipes","ass","ass","assh0le","assh0les","asshat","asshole","assholes","assholz","asswipe"],
         'b' : ["b!+ch","b!tch","bastard","bastard","bastards","batshit","bitch","bitch","bitches","blowjob","bullshit"],
         'c' : ["c0ck","c0ck","c0cks","clit","clit","cock","cocks","cocksucker","cum","cunt","cunts","cuntz"],
-        'd' : ["dick","dicks","dildo","dildos","dumbass","dyke"],
-        'f' : ["f***", "f*ck", "fag","fagg0t","faggot","fags","fatass","fuck","fuck","fucker","fuckin","fuckin'","fucking","fucks","fuk","fukin"],
+        'd' : ["damn","damned","damnit","dammit","dick","dicks","dildo","dildos","dumbass","dyke"],
+        'f' : ["f***", "f*ck", "fag","fagg0t","faggot","faggots","fags","fatass","fuck","fuck","fucked","fucker","fuckin","fuckin'","fucking","fucks","fucky","fuk","fukin"],
         'g' : ["goddam","goddamit","goddamn","goddamned","goddamnit"],
         'h' : ["horseshit"],
         'j' : ["jerk-off", "jerkoff"],
         'm' : ["masterbate","mother-fucker","motherfucker"],
-        'n' : ["nigga","nigger"],
-        'p' : ["p0rn","pen1s","penis","piss","pissing","porn","pr0n","prick","pussy"],
+        'n' : ["nigga","nigger", "niggers"],
+        'p' : ["p0rn","pen1s","penis","piss","pissed","pisses","pissing","porn","pr0n","prick","pussy"],
         'r' : ["retard", "retarded"],
-        's' : ["sh!+","sh!t","sh!t","sh1t","shi+","shit","shit","shitting","skank","slut","son-of-a-bitch","sonofabitch"],
+        's' : ["sh!+","sh!t","sh!t","sh1t","shi+","shit","shit","shitting", "shitty","skank","slut","son-of-a-bitch","sonofabitch"],
         't' : ["tits", "twat"],
         'v' : ["vagina", "vaginal"],
         'w' : ["wank","wanker","whore"]
@@ -40,7 +40,7 @@ def check_profanity(message:str) -> bool:
     output_numpy = predict([message])
     check_profanity_output = bool(output_numpy[0])
     if check_profanity_output:
-        print("\tExplicit = TRUE; profanity_check() determinite")
+        #print("\tExplicit = TRUE; profanity_check() determinite")
         return True
     
     else:
@@ -49,7 +49,7 @@ def check_profanity(message:str) -> bool:
         for word in split_message:
             if(word[0] in "abcdfghjmnprstvw"):
                 if(word in profanity_dict[word[0]]):
-                    print("\tExplicit = TRUE; Blacklisted Word:", word)
+                    #print("\tExplicit = TRUE; Blacklisted Word:", word)
                     return True
                 
     return False
