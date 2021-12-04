@@ -1,0 +1,51 @@
+Master Results File!
+4-December-2021
+******************************************
+* These are weighted averages which the  *
+* original method of aggregating results *
+* didn't account for!                    *
+******************************************
+
+pythondev:
+
+   Average Angry Score (Per Message): 0.046675586
+   Average Happy Score (Per Message): 0.095183471
+   Average Sad Score (Per Message): 0.252932029
+   Average Surprise Score (Per Message): 0.231523479
+   Average Fear Score (Per Message): 0.466207313
+   Total Number of Profane Messages: 316
+   Total Number of Messages: 45593
+   Percentage of Profane Messages: 0.69308885135876%
+
+clojurians:
+
+   Average Angry Score (Per Message): 0.035831909
+   Average Happy Score (Per Message): 0.07664673
+   Average Sad Score (Per Message): 0.177426124
+   Average Surprise Score (Per Message): 0.173882591
+   Average Fear Score (Per Message): 0.32686221
+   Total Number of Profane Messages: 236
+   Total Number of Messages: 47986
+   Percentage of Profane Messages: 0.49181011128246%
+
+elmlang-general:
+
+   Average Angry Score (Per Message): 0.051280823
+   Average Happy Score (Per Message): 0.107649014
+   Average Sad Score (Per Message): 0.257504582
+   Average Surprise Score (Per Message): 0.254887461
+   Average Fear Score (Per Message): 0.497389966
+   Total Number of Profane Messages: 144
+   Total Number of Messages: 40919
+   Percentage of Profane Messages: 0.35191475842518%
+
+elmlang-beginners:
+
+   Average Angry Score (Per Message): 0.053090277
+   Average Happy Score (Per Message): 0.11420842
+   Average Sad Score (Per Message): 0.298821757
+   Average Surprise Score (Per Message): 0.287638572
+   Average Fear Score (Per Message): 0.590616302
+   Total Number of Profane Messages: 218
+   Total Number of Messages: 62729
+   Percentage of Profane Messages: 0.3475266623093%
